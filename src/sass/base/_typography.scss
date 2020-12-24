@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(/dist/font/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/dist/font/Montserrat-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/dist/font/Montserrat-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+.heading {
+    font-size: 56px;
+    line-height: 68px;
+    @media (max-width: 640px) {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+    &-xl {
+        font-size: 50px;
+        line-height: normal;
+    }
+}
+
+.text {
+    &-lg {
+        font-size: 15px;
+        line-height: normal;
+    }
+    &-sm {
+        font-size: 12px;
+        line-height: normal;
+    }
+}
+
+.fw {
+    &-m {
+        font-weight: 500;
+    }
+    &-b {
+        font-weight: bold;
+    }
+}

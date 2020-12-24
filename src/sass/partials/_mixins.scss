@@ -1,0 +1,50 @@
+@mixin position($position, $top, $right, $bottom, $left) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin height-width($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin text-ellipsis($value) {
+    max-width: $value;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin margin-padding($num) {
+    @if ($num) {
+        @for $i from 0 through 10 {
+            .mb-#{$i} {
+                margin-bottom: #{$num * $i}px;
+            }
+            .mt-#{$i} {
+                margin-top: #{$num * $i}px;
+            }
+            .ml-#{$i} {
+                margin-left: #{$num * $i}px;
+            }
+            .mr-#{$i} {
+                margin-right: #{$num * $i}px;
+            }
+            .pb-#{$i} {
+                padding-bottom: #{$num * $i}px;
+            }
+            .pt-#{$i} {
+                padding-top: #{$num * $i}px;
+            }
+            .pl-#{$i} {
+                padding-left: #{$num * $i}px;
+            }
+            .pr-#{$i} {
+                padding-right: #{$num * $i}px;
+            }
+        }
+    }
+}

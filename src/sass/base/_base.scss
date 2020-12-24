@@ -1,0 +1,28 @@
+body {
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 22px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    &,
+    li {
+        list-style-type: none;
+    }
+}

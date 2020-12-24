@@ -1,0 +1,70 @@
+.ta {
+    &-left {
+        text-align: left;
+    }
+    &-center {
+        text-align: center;
+    }
+    &-right {
+        text-align: right;
+    }
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.lh-reset {
+    line-height: 0;
+}
+
+.fs-0 {
+    font-size: 0;
+}
+
+.fx-center {
+    display: flex;
+    align-items: center;
+}
+
+@include margin-padding(10);
+
+.m {
+    &-a {
+        margin: auto;
+    }
+    &l-a {
+        margin-left: auto;
+    }
+    &r-a {
+        margin-right: auto;
+    }
+}
+
+.icon {
+    @include height-width(100%, 100%);
+}
+
+.arrow-up::after {
+    content: "";
+    @include position(absolute, 13px, -66px, null, null);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid $light-bluey-grey;
+}
+
+.link-hover {
+    transition: 0.3s;
+    &::after {
+        content: "";
+        display: block;
+        @include height-width(2px, 0);
+        @include position(absolute, null, null, -4px, 0);
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    }
+    &:hover::after {
+        width: 100%;
+        left: 0;
+    }
+}

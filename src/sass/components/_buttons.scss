@@ -1,0 +1,17 @@
+.btn {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &-lg {
+        @include height-width(70px, 210px);
+    }
+    &-primary {
+        background: $primary-green;
+        color: #fff;
+        transition: 0.3s;
+        &:hover {
+            background: #1caa4d;
+        }
+    }
+} 

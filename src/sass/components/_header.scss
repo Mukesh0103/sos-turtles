@@ -1,0 +1,29 @@
+.header {
+    width: 100%;
+    @include position(fixed, 0, null, null, 0);
+    z-index: 10;
+    &.scroll-shadow {
+        box-shadow: 0 2px 10px #bababa;
+        transition: 0.5s;
+    }
+}
+
+.navbar {
+    .logo {
+        @include height-width(25px, 150px);
+    }
+    .navlist__container {
+        color: #fff;
+        &:last-of-type {
+            width: 150px;
+        }
+        .navlist {
+            display: inline-block;
+            vertical-align: middle;
+            .navlist-icon {
+                @include height-width(16px, 16px);
+                display: block;
+            }
+        }
+    }
+}
