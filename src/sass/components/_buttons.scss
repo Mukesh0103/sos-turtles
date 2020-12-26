@@ -5,6 +5,9 @@
     cursor: pointer;
     &-lg {
         @include height-width(70px, 210px);
+        @media (max-width: 991px) {
+            @include height-width(50px, 160px);
+        }
     }
     &-primary {
         background: $primary-green;

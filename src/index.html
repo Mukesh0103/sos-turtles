@@ -10,30 +10,47 @@
 
 <body>
     <div>
-        <header class="header">
-            <nav class="navbar fx-center pt-2 pb-2 pl-3 pr-3">
+        <!-- Header -->
+        <header class="header pt-2 pb-2 pl-3 pr-3" id="header">
+            <nav class="navbar fx-center">
                 <a href="javascript:void(0)" class="logo">
                     <img src="/dist/images/logo.png" class="icon">
                 </a>
-                <ul class="navlist__container m-a fw-m">
-                    <li class="navlist text-sm mr-4 link-hover pos-rel"><a href="javascript:void(0)">ABOUT</a></li>
-                    <li class="navlist text-sm mr-4 link-hover pos-rel"><a href="javascript:void(0)">STORIES</a></li>
-                    <li class="navlist text-sm mr-4 link-hover pos-rel"><a href="javascript:void(0)">NEWS</a></li>
-                    <li class="navlist text-sm mr-4 link-hover pos-rel"><a href="javascript:void(0)">RESEARCH</a></li>
-                    <li class="navlist text-sm mr-4 link-hover pos-rel"><a href="javascript:void(0)">BLOG</a></li>
+                <ul class="navlist-container desktop m-a fw-m fs-0">
+                    <li class="navlist text-sm link-hover pos-rel"><a href="javascript:void(0)">ABOUT</a></li>
+                    <li class="navlist text-sm link-hover pos-rel"><a href="javascript:void(0)">STORIES</a></li>
+                    <li class="navlist text-sm link-hover pos-rel"><a href="javascript:void(0)">NEWS</a></li>
+                    <li class="navlist text-sm link-hover pos-rel"><a href="javascript:void(0)">RESEARCH</a></li>
+                    <li class="navlist text-sm link-hover pos-rel"><a href="javascript:void(0)">BLOG</a></li>
                     <li class="navlist text-sm link-hover pos-rel"><a href="javascript:void(0)">CONTACT</a></li>
                 </ul>
-                <ul class="navlist__container ta-right">
-                    <li class="navlist mr-3"><a href="javascript:void(0)" class="navlist-icon"><svg class="icon">
+                <ul class="navlist-container ta-right fs-0">
+                    <li class="navlist"><a href="javascript:void(0)" class="navlist-icon"><svg class="icon">
                                 <use href="/dist/images/sprite.svg#search" />
                             </svg></a></li>
                     <li class="navlist"><a href="javascript:void(0)" class="navlist-icon"><svg class="icon">
                                 <use href="/dist/images/sprite.svg#language" />
                             </svg></a></li>
                 </ul>
+                <div class="menu-button pos-rel">
+                    <input type="checkbox" class="menu-button__input" id="menu-button" />
+                    <span class="menu-icon__line pos-rel"></span>
+                    <span class="menu-icon__line pos-rel"></span>
+                    <span class="menu-icon__line pos-rel"></span>
+                </div>
             </nav>
+            <ul class="mobile-menu fw-m mt-2" id="mobile-menu">
+                <li class="text-sm"><a href="javascript:void(0)">ABOUT</a></li>
+                <li class="text-sm"><a href="javascript:void(0)">STORIES</a></li>
+                <li class="text-sm"><a href="javascript:void(0)">NEWS</a></li>
+                <li class="text-sm"><a href="javascript:void(0)">RESEARCH</a></li>
+                <li class="text-sm"><a href="javascript:void(0)">BLOG</a></li>
+                <li class="text-sm"><a href="javascript:void(0)">CONTACT</a></li>
+            </ul>
         </header>
-        <section class="hero-section pos-rel">
+
+        <!-- Hero -->
+        <section class="hero-section pos-rel mb-10">
             <picture class="hero-img__container">
                 <img src="/dist/images/hero-img.jpg" alt="hero-img" />
             </picture>
@@ -46,29 +63,84 @@
                         <span class="hero-content__caption play-icon mr-1 pos-rel"></span>
                         <p class="text-lg fw-b hero-content__caption">HOW WE USE YOUR DONATION</p>
                     </div>
-                    <ul class="hero-footer fx-center">
+                    <ul class="hero-footer fs-0">
                         <li class="text-lg fw-m ta-center pl-6 pr-6">Donate to save baby turtles</li>
                         <li class="right-border"></li>
-                        <li class="dropdown">
-                            <button class="text-lg fw-m ta-center pl-7 pr-7 btn">
+                        <li class="dropdown pl-7 pr-7">
+                            <button class="text-lg fw-m ta-center btn">
                                 <label class="text-sm arrow-up pos-rel">Amount</label>
                                 <p>$20</p>
                             </button>
                         </li>
                         <li class="right-border"></li>
-                        <li class="dropdown">
-                            <button class="text-lg fw-m ta-center pl-7 pr-7 btn"><label
+                        <li class="dropdown pl-7 pr-7">
+                            <button class="text-lg fw-m ta-center btn"><label
                                     class="text-sm arrow-up pos-rel">Period</label>
                                 <p>Monthly</p>
                             </button>
                         </li>
-                        <li class="text-lg fw-m ta-center pr-1 ml-a"><button
+                        <li class="text-lg fw-m ta-right pr-1"><button
                                 class="btn btn-lg btn-primary text-lg fw-b">DONATE</button></li>
                     </ul>
                 </article>
             </div>
         </section>
+
+        <!-- sosturtle features -->
+        <section class="feature">
+            <div class="container-inner clearfix">
+                <figure class="feature-img__container f-left">
+                    <img src="/dist/images/sea-1.jpg" class="icon">
+                </figure>
+                <article class="feature-content__container ml-a pt-2">
+                    <h6 class="text-sm mb-5">projects</h6>
+                    <h2 class="heading-xl mb-4">SOS Turtle Conservations Tours</h2>
+                    <p class="text-lg fw-m mb-4">Unique opportunities to participate in wildlife conservation programs.
+                        Check out our hands-on tours to Costa Rica, Cuba, Mexico, and more.</p>
+                    <a href="javascript:void(0)" class="text-sm fw-b mr-1">upcoming turtle tours</a>
+                    <span class="arrow-right pos-rel"></span>
+                </article>
+            </div>
+            <div class="container-inner clearfix">
+                <figure class="feature-img__container f-right">
+                    <img src="/dist/images/sea-2.jpg" class="icon">
+                </figure>
+                <article class="feature-content__container pt-2 mr-a">
+                    <h6 class="text-sm mb-5">programs</h6>
+                    <h2 class="heading-xl mb-4">school and educational Programs</h2>
+                    <p class="text-lg fw-m mb-4">Helping students learn about and
+                        experience turtle conservation. We have Lesson plans, field trips, presentations,
+                        and fundraisers.</p>
+                    <a href="javascript:void(0)" class="text-sm fw-b mr-1">School Programs</a>
+                    <span class="arrow-right pos-rel"></span>
+                </article>
+            </div>
+            <div class="container-inner">
+                <article class="feature-content__container mb-3 pt-2">
+                    <h2 class="heading-xl mb-4">Billion baby turtles</h2>
+                    <p class="text-lg fw-m mb-4">We protect endangered sea turtles throughout Latin America and the
+                        world by supporting community-based conservation eforts. </p>
+                </article>
+                <ul class="stats fs-0">
+                    <li class="stats-list mr-3">
+                        <label class="heading">09</label>
+                        <p class="text-sm fw-b">grants to conservation organizations</p>
+                    </li>
+                    <li class="stats-list mr-3">
+                        <label class="heading">10</label>
+                        <p class="text-sm fw-b">turtle nesting beaches supported</p>
+                    </li>
+                    <li class="stats-list">
+                        <label class="heading">05</label>
+                        <p class="text-sm fw-b">species of sea turtles protected</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
+
+
+    <script src="/dist/js/final.js"></script>
 </body>
 
 </html>
