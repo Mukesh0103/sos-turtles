@@ -9,6 +9,12 @@
             @include height-width(50px, 160px);
         }
     }
+    &-md {
+        @include height-width(50px, 140px);
+        @media (max-width: 991px) {
+            @include height-width(35px, 100px);
+        }
+    }
     &-primary {
         background: $primary-green;
         color: #fff;

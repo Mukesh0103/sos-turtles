@@ -14,7 +14,7 @@
         <header class="header pt-2 pb-2 pl-3 pr-3" id="header">
             <nav class="navbar fx-center">
                 <a href="javascript:void(0)" class="logo">
-                    <img src="/dist/images/logo.png" class="icon">
+                    <img src="/dist/images/logo.png" alt="logo" class="icon">
                 </a>
                 <ul class="navlist-container desktop m-a fw-m fs-0">
                     <li class="navlist text-sm link-hover pos-rel"><a href="javascript:void(0)">ABOUT</a></li>
@@ -66,18 +66,27 @@
                     <ul class="hero-footer fs-0">
                         <li class="text-lg fw-m ta-center pl-6 pr-6">Donate to save baby turtles</li>
                         <li class="right-border"></li>
-                        <li class="dropdown pl-7 pr-7">
-                            <button class="text-lg fw-m ta-center btn">
+                        <li class="dropdown pl-7 pr-7 pos-rel">
+                            <button class="text-lg fw-m btn dropdown-btn">
                                 <label class="text-sm arrow-up pos-rel">Amount</label>
-                                <p>$20</p>
+                                <p class="dropdown-value">$20</p>
                             </button>
+                            <ul class="dropdown-box">
+                                <li class="dropdown-list text-sm fw-b">$10</li>
+                                <li class="dropdown-list text-sm fw-b">$20</li>
+                                <li class="dropdown-list text-sm fw-b">$30</li>
+                            </ul>
                         </li>
                         <li class="right-border"></li>
-                        <li class="dropdown pl-7 pr-7">
-                            <button class="text-lg fw-m ta-center btn"><label
+                        <li class="dropdown pl-7 pr-6 pos-rel">
+                            <button class="text-lg fw-m btn dropdown-btn"><label
                                     class="text-sm arrow-up pos-rel">Period</label>
-                                <p>Monthly</p>
+                                <p class="dropdown-value">Monthly</p>
                             </button>
+                            <ul class="dropdown-box">
+                                <li class="dropdown-list text-sm fw-b">Monthly</li>
+                                <li class="dropdown-list text-sm fw-b">Annually</li>
+                            </ul>
                         </li>
                         <li class="text-lg fw-m ta-right pr-1"><button
                                 class="btn btn-lg btn-primary text-lg fw-b">DONATE</button></li>
@@ -87,10 +96,10 @@
         </section>
 
         <!-- sosturtle features -->
-        <section class="feature">
-            <div class="container-inner clearfix">
-                <figure class="feature-img__container f-left">
-                    <img src="/dist/images/sea-1.jpg" class="icon">
+        <section class="bg-white pt-9">
+            <div class="container-inner feature-container clearfix">
+                <figure class="feature-img__container f-left fs-0">
+                    <img src="/dist/images/sea-1.jpg" class="icon" alt="sea-1">
                 </figure>
                 <article class="feature-content__container ml-a pt-2">
                     <h6 class="text-sm mb-5">projects</h6>
@@ -101,9 +110,9 @@
                     <span class="arrow-right pos-rel"></span>
                 </article>
             </div>
-            <div class="container-inner clearfix">
-                <figure class="feature-img__container f-right">
-                    <img src="/dist/images/sea-2.jpg" class="icon">
+            <div class="container-inner feature-container clearfix">
+                <figure class="feature-img__container f-right fs-0">
+                    <img src="/dist/images/sea-2.jpg" class="icon" alt="sea-2">
                 </figure>
                 <article class="feature-content__container pt-2 mr-a">
                     <h6 class="text-sm mb-5">programs</h6>
@@ -115,28 +124,113 @@
                     <span class="arrow-right pos-rel"></span>
                 </article>
             </div>
-            <div class="container-inner">
-                <article class="feature-content__container mb-3 pt-2">
-                    <h2 class="heading-xl mb-4">Billion baby turtles</h2>
-                    <p class="text-lg fw-m mb-4">We protect endangered sea turtles throughout Latin America and the
-                        world by supporting community-based conservation eforts. </p>
+            <div class="container-inner feature-container stats-container fs-0">
+                <div class="stats-wrapper">
+                    <article class="feature-content__container mb-3 pt-2">
+                        <h2 class="heading-xl mb-4">Billion baby turtles</h2>
+                        <p class="text-lg fw-m mb-4">We protect endangered sea turtles throughout Latin America and the
+                            world by supporting community-based conservation eforts. </p>
+                    </article>
+                    <ul class="stats-left fs-0">
+                        <li class="stats-list mr-3">
+                            <label class="heading">09</label>
+                            <p class="text-sm fw-b">grants to conservation organizations</p>
+                        </li>
+                        <li class="stats-list mr-3">
+                            <label class="heading">10</label>
+                            <p class="text-sm fw-b">turtle nesting beaches supported</p>
+                        </li>
+                        <li class="stats-list">
+                            <label class="heading">05</label>
+                            <p class="text-sm fw-b">species of sea turtles protected</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="stats-wrapper pos-rel ml-a">
+                    <div class="stats-right">
+                        <label class="heading mb-1">407K</label>
+                        <p class="text-lg fw-b">hatchlings saved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-inner feature-container clearfix">
+                <figure class="feature-img__container sea-3 f-left fs-0">
+                    <img src="/dist/images/sea-3.jpg" class="icon" alt="sea-3">
+                </figure>
+                <article class="feature-content__container ml-a">
+                    <h6 class="text-sm mb-5">programs</h6>
+                    <h2 class="heading-xl mb-4">SOS TURTLE CONSERVATION TRIPS</h2>
+                    <p class="text-lg fw-m mb-4">SOS Turtle Conservation Tours
+                        ofer the opportunity to see and participate in sea turtle conservation
+                        programs around Latin America. Our trips work with local researchers to help study and protect
+                        turtles on the beach or at sea and every trip helps save at least 100 hatchlings through our
+                        Billion Baby Turtles program.</p>
                 </article>
-                <ul class="stats fs-0">
-                    <li class="stats-list mr-3">
-                        <label class="heading">09</label>
-                        <p class="text-sm fw-b">grants to conservation organizations</p>
-                    </li>
-                    <li class="stats-list mr-3">
-                        <label class="heading">10</label>
-                        <p class="text-sm fw-b">turtle nesting beaches supported</p>
-                    </li>
-                    <li class="stats-list">
-                        <label class="heading">05</label>
-                        <p class="text-sm fw-b">species of sea turtles protected</p>
-                    </li>
-                </ul>
             </div>
         </section>
+
+        <!-- sosturtle latest news -->
+        <section class="bg-white pt-8 pb-8">
+            <div class="container-inner">
+                <h2 class="heading-xl mb-4">LATEST NEWS</h2>
+                <ul class="fs-0 pb-10">
+                    <li class="news-list">
+                        <h6 class="text-sm mb-3">CAMPAIGN</h6>
+                        <h2 class="heading-xl mb-2">Milman<br> Islet Research</h2>
+                        <p class="text-sm mb-2">On June 12, 2018 / By Turtle Save</p>
+                        <figure class="news-list__img mb-3 fs-0">
+                            <img src="/dist/images/news-1.jpg" class="icon" alt="news-img-1">
+                        </figure>
+                        <p class="text-lg fw-m mb-3">Researchers have been monitoring nesting turtle populations on
+                            Milman Islet for over 25
+                            years. It is a small sandy cay within the Denham groups of Islands in the northern Great…
+                        </p>
+                        <a href="javascript:void(0)" class="text-sm fw-b">CONTINUE READING</a>
+                    </li>
+                    <li class="news-list">
+                        <h6 class="text-sm mb-3">VOLUNTARY POSITIONS</h6>
+                        <h2 class="heading-xl mb-2">Project Assistant Volunteer</h2>
+                        <p class="text-sm mb-2">On February 10, 2018 / By Turtle Save</p>
+                        <figure class="news-list__img mb-3 fs-0">
+                            <img src="/dist/images/news-2.jpg" class="icon" alt="news-img-2">
+                        </figure>
+                        <p class="text-lg fw-m mb-3">We are now looking for a Project Assistant to undertake research,
+                            prepare information (including written communications and documentation) and provide
+                            fundraising, program…
+                        </p>
+                        <a href="javascript:void(0)" class="text-sm fw-b">CONTINUE READING</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary btn-md more-btn m-a fw-b">MORE NEWS</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer pt-10 pb-6">
+            <div class="container-inner">
+                <p class="text-lg fw-m ta-center">Sign up for monthly news, fun promotions, <span>and ways to help save
+                        turtles!</span></p>
+                <div class="footer-input__container pos-rel ta-left">
+                    <input type="text" class="footer-input__field text-sm ta-center"
+                        placeholder="Enter your email address" />
+                    <button class="btn btn-primary btn-md">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="sub-footer fx-center pl-8 pr-8">
+                <p class="text-sm fw-b"><span>Created by Geovani Almeida</span> CC 2018, Creative Commons 4.0</p>
+                <ul class="ml-a fs-0">
+                    <li class="social-icons"><a href="javascript:void(0)"><svg class="icon">
+                                <use href="/dist/images/sprite.svg#facebook" />
+                            </svg></a></li>
+                    <li class="social-icons"><a href="javascript:void(0)"><svg class="icon">
+                                <use href="/dist/images/sprite.svg#twitter" />
+                            </svg></a></li>
+                    <li class="social-icons"><a href="javascript:void(0)"><svg class="icon">
+                                <use href="/dist/images/sprite.svg#youtube" />
+                            </svg></a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 
 

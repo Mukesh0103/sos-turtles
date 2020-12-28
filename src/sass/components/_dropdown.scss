@@ -1,0 +1,20 @@
+.dropdown-box {
+    display: none;
+    @include position (absolute, 75px, null, null, 0);
+    background: #fff;
+    width: 100%;
+    border: 1px solid $light-grey;
+    .dropdown-list {
+        padding: 10px 20px;
+        display: list-item;
+        color: $light-bluey-grey;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            background-color: #f7f7f7;
+        }
+        &:last-child {
+            width: 100%;
+        }
+    }
+}

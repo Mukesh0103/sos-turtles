@@ -1,31 +1,37 @@
-.feature {
-    background: #fff;
-    padding: 90px 0;
-    @media (max-width: 767px) {
-        padding: 60px 0;
-    }
-    .container-inner {
-        margin-bottom: 75px;
+.feature-container {
+    margin-bottom: 75px;
+    &:nth-of-type(3) {
+        margin-bottom: 180px;
         @media (max-width: 767px) {
-            margin-bottom: 50px;
+            margin-bottom: 75px;
         }
-        .feature-img__container {
-            width: 400px;
-            @media (max-width: 991px) {
-                width: 350px;
-                margin-bottom: 30px;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 50px;
+    }
+    .feature-img__container {
+        width: 400px;
+        &.sea-3 {
+            @media (min-width: 992px) {
+                width: 500px;
             }
-            @media (max-width: 767px) {
-                width: 100%;
-                margin-bottom: 30px;
-            }
+        }
+        @media (max-width: 991px) {
+            width: 350px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-bottom: 30px;
         }
     }
 }
 
 .feature-content__container {
     max-width: 330px;
-    color: $dark-grey;
     text-transform: uppercase;
     @media (max-width: 767px) {
         text-align: center;
@@ -76,19 +82,44 @@
     }
 }
 
-.stats {
-    text-transform: uppercase;
-    width: 600px;
-    .stats-list {
-        display: inline-block;
-        vertical-align: middle;
-        max-width: calc((100% - (30px * 2)) / 3);
-
+.stats-container {
+    display: flex;
+    align-items: flex-end;
+    @media (max-width: 767px) {
+        display: block;
+    }
+    .stats-wrapper {
+        max-width: 67%;
+        @media (max-width: 767px) {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+        &:last-of-type {
+            width: 30%;
+            border: 4px solid $primary-green;
+            border-radius: 4px;
+            height: 280px;
+            @media (max-width: 767px) {
+                height: 200px;
+                width: 100%;
+            }
+        }
         .heading {
             color: $primary-green;
         }
-        .text-sm {
-            color: $dark-grey;
+        .stats-left {
+            text-transform: uppercase;
+            width: 100%;
+            .stats-list {
+                display: inline-block;
+                vertical-align: top;
+                max-width: calc((100% - (30px * 2)) / 3);
+            }
+        }
+        .stats-right {
+            @include position(absolute, 50%, null, null, 50%);
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
         }
     }
 }
